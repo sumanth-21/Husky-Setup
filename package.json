@@ -16,6 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "branch-naming-check": "^1.0.2",
     "css-loader": "^6.7.1",
     "eslint": "^8.14.0",
@@ -40,5 +42,10 @@
     "babel-loader": "^8.2.3",
     "webpack": "^5.70.0",
     "webpack-dev-server": "^4.7.4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
