@@ -1,5 +1,5 @@
 {
-  "name": "WEBPACK_SETUP-Tutorial",
+  "name": "UI Scaffolding Project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -38,11 +38,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": [
-        "npm run test-case",
-        "lint-staged"
-      ],
-      "pre-push": "branch-naming-check 'Regx'"
+      "pre-commit": "lint-staged",
+      "pre-push": "branch-naming-check '^(feature|fix)-\\d+(\\-,+|$)'"
     }
   },
   "lint-staged": {
