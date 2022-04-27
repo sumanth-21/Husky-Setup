@@ -7,7 +7,8 @@
     "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack",
-    "build-dev": "webpack"
+    "build-dev": "webpack",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,7 @@
     "branch-naming-check": "^1.0.2",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "lint-staged": "^12.4.1",
     "mini-css-extract-plugin": "^2.6.0",
     "postcss": "^8.4.12",
@@ -35,12 +36,6 @@
     "babel-loader": "^8.2.3",
     "webpack": "^5.70.0",
     "webpack-dev-server": "^4.7.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "branch-naming-check '^(feature|fix)-\\d+(\\-,+|$)'"
-    }
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
