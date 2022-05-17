@@ -9,6 +9,15 @@ Husky improves your commits and more 🐶 *woof!*
 npm install
 ```
 
+# For MAC Users
+
+Run the below commands to set Husky as executable:
+
+```sh
+chmod ug+x .husky/*
+chmod ug+x .git/hooks/*
+```
+
 # Usage
 
 Make a commit:
