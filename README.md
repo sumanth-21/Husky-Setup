@@ -57,7 +57,7 @@ git push
 ```sh
 # `pre-push` hook will execute to test if the branch name is matching the required pattern
 ```
-push will be successful if above hook returns true
+Your push will be successful if 'pre-push' hook returns true
 
 # Documentation
 
