@@ -24,6 +24,25 @@ chmod ug+x .husky/*
 chmod ug+x .git/hooks/*
 ```
 
+# Config
+
+## Pre-Commit hook
+> /.husky/pre-commit
+> 
+> /.lintstagedrc
+
+Here 'lint-staged' is being used to lint the staged files. Lint config changes can be done in the lintstagedrc file.
+
+## Commit Message hook
+> /.husky/commit-msg
+
+You can change the 'PATTERN' of your commit message as per your requirement in the commit-msg file.
+
+## Pre-Push hook
+> /.husky/pre-push
+
+You can change the 'valid_branch_regex' in the pre-push file according to the desired branch name pattern to be followed.
+
 # Usage
 
 ## Add your changes and Make a commit:
